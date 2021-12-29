@@ -1,0 +1,14 @@
+.subscribe {
+  @extend %d-flex;
+}
+.subscribe__input {
+  margin-right: 12px;
+  border-radius: 4px;
+  padding-left: 16px;
+  color: $secondary-text-color;
+  background-color: transparent;
+  transition: border-color $transition-cubic;
+  width: 358px;
+  min-height: 50px;
+  border: 1px solid rgba($border-footer-color, 0.3);
+}

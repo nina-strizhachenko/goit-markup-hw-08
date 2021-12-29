@@ -1,0 +1,31 @@
+.address {
+  margin-top: 20px;
+}
+
+.address__contacts {
+  display: block;
+}
+
+.address__map {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: $secondary-text-color;
+  transition: color $transition-cubic;
+  &__map:hover,
+  &__map:focus {
+    color: $accent-color;
+  }
+}
+.address__link {
+  font-style: normal;
+  @include font(400, 14px, 1.71, 0.03em);
+  color: rgba($secondary-text-color, 0.6);
+  transition: color $transition-cubic;
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}

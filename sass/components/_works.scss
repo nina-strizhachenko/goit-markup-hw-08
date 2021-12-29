@@ -1,0 +1,35 @@
+.section-work {
+  padding-top: 47px;
+}
+
+.works {
+  display: flex;
+}
+
+.works__item {
+  position: relative;
+}
+
+.works__text-wrapp {
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  position: absolute;
+  padding: 27px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+
+.works__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+.works__item:not(:last-child) {
+  margin-right: 30px;
+}

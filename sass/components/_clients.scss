@@ -1,0 +1,30 @@
+.clients {
+  @extend %d-flex;
+}
+
+.clients__item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients__link {
+  @extend %d-flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-clients-color;
+  border-radius: 4px;
+  color: $border-clients-color;
+  transition: border $transition-cubic, color $transition-cubic;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

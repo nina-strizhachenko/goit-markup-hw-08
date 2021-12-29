@@ -1,0 +1,71 @@
+.main-section {
+  text-align: center;
+  @include font(900, 44px, 1.36, 0.06em);
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  background-color: $secondary-bgr-color;
+  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
+  width: 100%;
+}
+.main-section__title {
+  font-size: 44px;
+  max-width: 696px;
+  margin: 0 auto 30px;
+}
+@media screen and (min-width: 480px) {
+  .main-section {
+    width: 480px;
+    padding: 118px 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .main-section__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-section {
+    width: 768px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-section__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .main-section {
+    width: 1600px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-section__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    margin: 0 auto 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

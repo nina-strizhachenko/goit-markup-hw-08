@@ -1,0 +1,104 @@
+.primary-btn {
+  cursor: pointer;
+  font-family: inherit;
+  @include font(700, 16px, 1.87, 0.06em);
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  margin: 0 auto;
+  transition: background-color $transition-cubic;
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+  }
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.primary-btn--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-btn__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.secondary-btn {
+  cursor: pointer;
+  font-family: inherit;
+  @include font(500, 16px, 1.62, 0.03em);
+  color: $primary-shade-text-color;
+  background-color: $secondary-shade-bgr-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  transition: background-color $transition-cubic, color $transition-cubic;
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background: $primary-bgr-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  @extend %d-flex-center;
+}
+
+.close-btn__icon:hover,
+.close-btn__icon:focus {
+  fill: $accent-color;
+  transition: fill transition-cubic;
+}
+.menu-btn {
+  border: none;
+  background: transparent;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .menu-btn__icon--close {
+    opacity: 0;
+  }
+
+  .menu-btn__icon--open {
+    opacity: 1;
+  }
+
+  &--is-open {
+    .menu-btn__icon--close {
+      opacity: 1;
+    }
+    .menu-btn__icon--open {
+      opacity: 0;
+    }
+  }
+  .menu-btn__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
