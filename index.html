@@ -47,24 +47,19 @@
         </div>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
             type="button"></button>
-        <svg class="menu-btn__icon" width="40" height="40">
-            <span class="menu-btn__icon--open">
-                <use href="./images/icons.svg#icon-menu-burger"></use>
-            </span>
-            <span class="menu-btn__icon--close">
-                <use href="./images/icons.svg#icon-close"></use>
-            </span>
+        <svg class="menu-toggle" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
         </svg>
-
     </header>
+
     <main>
-        <!-- <section class="main-section">
+        <section class="main-section">
             <div class="container">
                 <h1 class="main-section__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="primary-btn primary-btn--flex" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
-        <!-- <section class="section special">
+        </section>
+        <section class="section special">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="special-list list">
@@ -116,8 +111,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section section-work visually-hidden">
+        </section>
+        <section class="section section-work visually-hidden">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="works list">
@@ -141,8 +136,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section team">
+        </section>
+        <section class="section team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
@@ -285,7 +280,7 @@
                 </ul>
             </div>
         </section> -->
-        <!-- <section class="section">
+        <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
                 <ul class="clients list">
@@ -319,9 +314,9 @@
                                 <use href="./images/icons.svg#icon-Logo-6"></use>
                             </svg></a>
                     </li>
-                </ul> -->
+                </ul>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <div class="">
                 <a class="logo logo--secondary link" href="WebStudio"><span class="logo__web">Web</span><span
@@ -443,20 +438,24 @@
         </div>
     </div>
 
-    
-    <script src="./js/modal.js"></script> -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu" type="button"></button>
-        <nav class="header__nav">
-            <ul class="nav-list list">
-                <li class="nav-list__item"><a href="./index.html"
-                        class="nav-list__link nav-list__link--current link ">Студия</a>
-                </li>
-                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
-                <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
-            </ul>
-        </nav>
+    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden">
+        <div class="menu-container js-menu-container is-open" id="mobile-menu">
+            <button class="menu-toggle js-close-menu" type="button"></button>
+            <svg class="" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <nav class="header__nav">
+                <ul class="nav-list list">
+                    <li class="nav-list__item"><a href="./index.html"
+                            class="nav-list__link nav-list__link--current link ">Студия</a>
+                    </li>
+                    <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
+                    <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
 </body>

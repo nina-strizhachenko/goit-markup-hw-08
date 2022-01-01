@@ -31,3 +31,47 @@
   color: $primary-shade-text-color;
   margin-bottom: 12px;
 }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform $transition-cubic;
+  padding: 40px;
+  background-color: $primary-bgr-color;
+}
+.menu-toggle {
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.menu-toggle:focus {
+  background-color: $accent-color;
+}
+.menu-container .is-open {
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  color: $secondary-text-color;
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
