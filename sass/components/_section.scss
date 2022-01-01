@@ -9,3 +9,10 @@
   color: $primary-shade-text-color;
   margin-bottom: 50px;
 }
+
+@media screen and (min-width: 480px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}

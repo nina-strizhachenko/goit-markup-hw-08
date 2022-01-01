@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <a class="logo link" href="WebStudio"><span class="logo__web">Web</span><span>Studio</span></a>
             <nav class="header__nav">
@@ -45,7 +45,8 @@
                         11</a></li>
             </ul>
         </div>
-        <button class="menu-btn" type="button" data-mobile-btn></button>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+            type="button"></button>
         <svg class="menu-btn__icon" width="40" height="40">
             <span class="menu-btn__icon--open">
                 <use href="./images/icons.svg#icon-menu-burger"></use>
@@ -55,7 +56,7 @@
             </span>
         </svg>
 
-    </header> -->
+    </header>
     <main>
         <!-- <section class="main-section">
             <div class="container">
@@ -63,7 +64,7 @@
                 <button class="primary-btn primary-btn--flex" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section> -->
-        <section class="section special">
+        <!-- <section class="section special">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="special-list list">
@@ -115,8 +116,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="section section-work visually-hidden">
+        </section> -->
+        <!-- <section class="section section-work visually-hidden">
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="works list">
@@ -140,8 +141,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="section team">
+        </section> -->
+        <!-- <section class="section team">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
@@ -283,7 +284,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="section">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
@@ -445,18 +446,17 @@
     
     <script src="./js/modal.js"></script> -->
 
-    <div class="mobile-menu is-hidden" data-menu-container>
-        <div class="mobile-menu__container">
-            <nav class="header__nav">
-                <ul class="nav-list list">
-                    <li class="nav-list__item"><a href="./index.html"
-                            class="nav-list__link nav-list__link--current link ">Студия</a>
-                    </li>
-                    <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
-                    <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" type="button"></button>
+        <nav class="header__nav">
+            <ul class="nav-list list">
+                <li class="nav-list__item"><a href="./index.html"
+                        class="nav-list__link nav-list__link--current link ">Студия</a>
+                </li>
+                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link link">Портфолио</a></li>
+                <li class="nav-list__item"><a href="" class="nav-list__link link">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
     <script src="./js/mobile-menu.js"></script>
 </body>
