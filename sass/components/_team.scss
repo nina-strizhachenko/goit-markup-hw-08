@@ -7,11 +7,16 @@
     display: block;
     padding-right: 15px;
     padding-left: 15px;
+    padding-bottom: 60px;
   }
 }
 
 .team-list__item:not(:last-child) {
   margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-bottom: 30px;
+  }
 }
 .team-list__teammate {
   padding: 30px 32px;

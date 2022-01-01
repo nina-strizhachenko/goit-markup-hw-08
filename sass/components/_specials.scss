@@ -1,7 +1,7 @@
 .special {
   padding-bottom: 47px;
   @media screen and (min-width: 480px) {
-    padding-bottom: 60px 0;
+    padding-bottom: 0;
   }
 }
 
@@ -41,6 +41,7 @@
   .special-list__item {
     width: 450px;
     margin-right: 15px;
+    margin-bottom: 30px;
   }
 }
 

@@ -6,12 +6,33 @@
   background-color: $secondary-bgr-color;
   background-size: cover;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding: 200px 0;
   width: 100%;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-mob-2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-desk-2x.jpg);
+    }
+  }
 }
+
 .main-section__title {
   font-size: 44px;
   max-width: 696px;
@@ -21,6 +42,7 @@
   .main-section {
     width: 480px;
     padding: 118px 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -34,12 +56,14 @@
     margin: 0 auto 30px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .main-section {
     width: 768px;
     padding: 0;
   }
 }
+
 @media screen and (min-width: 768px) {
   .main-section__title {
     font-weight: 900;
@@ -52,13 +76,13 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-section {
-    width: 1600px;
+    width: 1200px;
     padding: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-section__title {
     font-weight: 900;
     font-size: 44px;

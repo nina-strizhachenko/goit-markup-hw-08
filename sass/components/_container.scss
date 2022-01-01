@@ -2,23 +2,24 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  align-items: baseline;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    padding: 0;
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
     padding: 118px 204px;
   }
 }
 @media screen and (min-width: 1600px) {
   .container {
-    width: 1600px;
     padding: 200px 452px;
   }
 }
