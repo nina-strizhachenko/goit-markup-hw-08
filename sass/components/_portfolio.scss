@@ -1,6 +1,10 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin-top: 40px;
+  }
 }
 
 .portfolio-list__title {
@@ -47,7 +51,17 @@
 }
 .portfolio-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
+  @media screen and (min-width: 480px) {
+    margin-right: 0;
+  }
 }
+
+@media screen and (min-width: 480px) {
+  .portfolio-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio-list__item:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
@@ -59,6 +73,9 @@
 .portfolio-list__item-wrap {
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 }
 
 .portfolio-list__description {

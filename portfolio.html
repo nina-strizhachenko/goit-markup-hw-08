@@ -22,6 +22,12 @@
     <header class="header--border">
         <div class="container  header__container">
             <a class="logo link" href="WebStudio"> <span class="logo__web">Web</span><span>Studio</span></a>
+            <button type="button" class="menu-toggle js-open-menu js-close-menu" aria-expanded="false"
+                aria-controls="mobile-menu"></button>
+            <svg class="" width="24" height="16" aria-label="Переключатель мобильного меню">
+                <use class="icon-burger" href="./images/icons.svg#icon-menu-burger"></use>
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+            </svg>
             <nav class="header__nav">
                 <ul class="nav-list list">
                     <li class="nav-list__item"><a href="./index.html" class="nav-list__link link">Студия</a></li>
@@ -58,7 +64,7 @@
                 <ul class="portfolio-list list">
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(05)-min.jpg" alt="экран ноутбука" width="370">
+                            <img src="./images/img(05)-min.jpg" alt="экран ноутбука" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -76,7 +82,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(06)-min.jpg" alt="постер два баскетболиста" width="370">
+                            <img src="./images/img(06)-min.jpg" alt="постер два баскетболиста" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -94,7 +100,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(07)-min.jpg" alt="логотип на рыбе" width="370">
+                            <img src="./images/img(07)-min.jpg" alt="логотип на рыбе" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -112,7 +118,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(08)-min.jpg" alt="наушники" width="370">
+                            <img src="./images/img(08)-min.jpg" alt="наушники" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -130,7 +136,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(09)-min.jpg" alt="две коробки" width="370">
+                            <img src="./images/img(09)-min.jpg" alt="две коробки" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -147,7 +153,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(010)-min.jpg" alt="монитор" width="370">
+                            <img src="./images/img(010)-min.jpg" alt="монитор" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -165,7 +171,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(011)-min.jpg" alt="монитор" width="370">
+                            <img src="./images/img(011)-min.jpg" alt="монитор" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -183,7 +189,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(012)-min.jpg" alt="белая этикетка" width="370">
+                            <img src="./images/img(012)-min.jpg" alt="белая этикетка" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -201,7 +207,7 @@
                     </li>
                     <li class="portfolio-list__item">
                         <div class="portfolio-list__item-wrap">
-                            <img src="./images/img(013)-min.jpg" alt="руки на клавиатуре ноутбука" width="370">
+                            <img src="./images/img(013)-min.jpg" alt="руки на клавиатуре ноутбука" width="450">
                             <div class="portfolio-list__description--overlay">
                                 <p class="portfolio-list__description">Технокряк это современная площадка
                                     распространения
@@ -223,7 +229,7 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <div class="">
+            <div class="footer__container--wrap">
                 <a class="logo logo--secondary link" href="WebStudio"><span class="logo__web">Web</span><span
                         class="">Studio</span></a>
                 <address class="address">
@@ -243,32 +249,32 @@
                     </ul>
             </div>
             </address>
-            <div class="">
+            <div class="footer__container--wrap">
                 <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="social-list list">
                     <li class="social-list__item">
                         <a href="" class="social-list__link social-list__link--secondary-color">
                             <svg class="social-list__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                                <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link social-list__link--secondary-color">
                             <svg class="social-list__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter-2"></use>
+                                <use href="./images/icons.svg#icon-twitter"></use>
                             </svg></a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link social-list__link--secondary-color">
                             <svg class="social-list__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook-2"></use>
+                                <use href="./images/icons.svg#icon-facebook"></use>
                             </svg></a>
                     </li>
                     <li class="social-list__item">
                         <a href="" class="social-list__link social-list__link--secondary-color">
                             <svg class="social-list__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin-2"></use>
+                                <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg></a>
                     </li>
                 </ul>

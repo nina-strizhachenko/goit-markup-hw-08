@@ -2,7 +2,21 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @media screen and (min-width: 480px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -8px;
+  }
 }
+
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  @media screen and (min-width: 480px) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .filter__item {
+    margin: 8px;
+  }
 }
