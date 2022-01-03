@@ -29,3 +29,23 @@
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+  }
+}

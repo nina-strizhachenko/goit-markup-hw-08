@@ -16,7 +16,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/main.min.css">
-
 </head>
 
 <body>
@@ -51,13 +50,11 @@
                         11</a></li>
             </ul>
         </div>
-
     </header>
-
     <main>
         <section class="main-section">
             <div class="container">
-                <h1 class="main-section__title">Эффективные решения <br> для вашего бизнеса</h1>
+                <h1 class="main-section__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="primary-btn primary-btn--flex" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -143,7 +140,8 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
-                    <li class="team-list__item"><img src="./images/img-min-1.jpg" alt="мужчина в коричневой рубашке">
+                    <li class="team-list__item"><img src="./images/img-min-1.jpg" width="450"
+                            alt="мужчина в коричневой рубашке">
                         <div class="team-list__teammate">
                             <h3 class="team-list__teammate-name">Игорь Демьяненко</h3>
                             <p class="team-list__teammate-position">Product Designer</p>
@@ -177,7 +175,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img-min-2.jpg" alt="женщина">
+                        <img src="./images/img-min-2.jpg" width="450" alt="женщина">
                         <div class="team-list__teammate">
                             <h3 class="team-list__teammate-name">Ольга Репина</h3>
                             <p class="team-list__teammate-position">Frontend Developer</p>
@@ -211,7 +209,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img-min-3.jpg" alt="мужчина в коричневой рубашке">
+                        <img src="./images/img-min-3.jpg" width="450" alt="мужчина в коричневой рубашке">
                         <div class="team-list__teammate">
                             <h3 class="team-list__teammate-name">Николай Тарасов</h3>
                             <p class="team-list__teammate-position">Marketing</p>
@@ -245,7 +243,7 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img-min-4.jpg" alt="мужчина в коричневой рубашке">
+                        <img src="./images/img-min-4.jpg" width="450" alt="мужчина в коричневой рубашке">
                         <div class="team-list__teammate">
                             <h3 class="team-list__teammate-name">Михаил Ермаков</h3>
                             <p class="team-list__teammate-position">UI Designer</p>
@@ -316,6 +314,8 @@
                             </svg></a>
                     </li>
                 </ul>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -337,8 +337,8 @@
                             <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
+                </address>
             </div>
-            </address>
             <div class="footer__container--wrap">
                 <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
                 <ul class="social-list list">
@@ -369,18 +369,19 @@
                     </li>
                 </ul>
             </div>
-            <div class="">
-                <h3 class="footer__title">Подпишитесь на рассылку</h3>
-                <form action="#" class="subscribe">
-                    <input type="text" name="mailing-email" class="subscribe__input" id="mailing-email"
-                        placeholder="E-mail" />
-                    <button class="primary-btn primary-btn--flex" type="submit">Подписаться<svg
-                            class="primary-btn__icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+        </div>
+        <div class="footer__subscribe">
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
+            <form action="#" class="subscribe">
+                <input type="text" name="mailing-email" class="subscribe__input" id="mailing-email"
+                    placeholder="E-mail" />
+                <button class="primary-btn primary-btn--flex" type="submit">Подписаться<svg class="primary-btn__icon"
+                        width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -421,10 +422,9 @@
                 </div>
                 <div class="form-field-textarea">
                     <label for="user-text" class="label">Комментарий</label>
-                    <textarea name="" id="user-text" class="form-field-textarea__input"
+                    <textarea name="feedback" id="user-text" class="form-field-textarea__input"
                         placeholder="Введите текст"></textarea>
                 </div>
-
                 <div class="checkbox-field">
                     <input type="checkbox" name="policy" id="modal-check" class="checkbox-field__input visually-hidden">
                     <label for="modal-check" class="checkbox-field__label">
@@ -440,7 +440,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-
 
     <div class="mobile-menu js-menu-container" id="mobile-menu">
         <nav class="header__nav">
@@ -481,9 +480,6 @@
             </ul>
         </div>
     </div>
-
-
-
     <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
