@@ -1,7 +1,6 @@
 .menu-toggle {
   position: absolute;
   right: 15px;
-  z-index: 2;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -18,7 +17,7 @@
 }
 
 .mobile-menu {
-  z-index: 1;
+  z-index: 999;
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -27,7 +26,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1;
     padding: 48px 40px;
     text-align: left;
     background-color: #fff;

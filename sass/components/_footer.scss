@@ -12,11 +12,6 @@
   margin-bottom: 12px;
 }
 
-.footer__container {
-  @extend %d-flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
 @media screen and (min-width: 480px) {
   .footer__container {
     display: block;
@@ -29,6 +24,12 @@
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 480px) {
+  .footer__title {
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
@@ -45,7 +46,8 @@
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    display: flex;
-    align-items: center;
+    @extend %d-flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 }

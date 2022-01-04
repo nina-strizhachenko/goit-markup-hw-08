@@ -2,6 +2,12 @@
   padding-top: 47px;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
 .works {
   display: flex;
 }

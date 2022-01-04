@@ -13,21 +13,20 @@
   }
 }
 
-.clients__item:not(:first-child) {
-  margin-left: 30px;
-  @media screen and (min-width: 480px) {
-    margin-left: 0;
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1170px;
   }
 }
 
 @media screen and (min-width: 480px) {
   .clients__item {
-    margin: 0 15px 30px 0;
-  }
-}
-@media screen and (min-width: 480px) {
-  .clients__item:nth-child(2n) {
-    margin-right: 0;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-left: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -65,6 +64,13 @@
 @media screen and (min-width: 480px) {
   .clients__link {
     min-width: 210px;
+    min-height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    min-width: 170px;
     min-height: 92px;
   }
 }

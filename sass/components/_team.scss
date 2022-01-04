@@ -17,6 +17,14 @@
     margin: -15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+}
+
 .team-list__item:not(:last-child) {
   margin-right: 30px;
   @media screen and (min-width: 480px) {
