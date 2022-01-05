@@ -46,9 +46,17 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container {
-    @extend %d-flex;
+  .footer__subscribe {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-desktop {
+    display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    text-align: start;
   }
 }

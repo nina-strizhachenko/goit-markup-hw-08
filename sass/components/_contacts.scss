@@ -1,11 +1,15 @@
 .contacts {
   @extend %d-flex;
   margin-left: auto;
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
     display: block;
     flex-direction: column-reverse;
   }
 }
+
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;

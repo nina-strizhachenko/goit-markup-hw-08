@@ -2,10 +2,19 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  @media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 480px) {
+  .filter {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: -8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 

@@ -1,11 +1,22 @@
 .subscribe {
   @extend %d-flex;
-  @media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe {
     display: block;
     padding-left: 15px;
     padding-right: 15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .subscribe__input {
   margin-right: 12px;
   border-radius: 4px;
@@ -24,5 +35,8 @@
   }
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
