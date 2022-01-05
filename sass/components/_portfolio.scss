@@ -6,7 +6,13 @@
     margin-top: 40px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 .portfolio-list__title {
   font-style: normal;
   font-weight: 500;
@@ -59,6 +65,16 @@
 @media screen and (min-width: 480px) {
   .portfolio-list__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
