@@ -22,6 +22,12 @@
     justify-content: center;
   }
 }
+@media screen and (min-width: 320px) {
+  .checkbox-field__label {
+    font-size: 12px;
+  }
+}
+
 .checkbox-field__icon {
   fill: $primary-bgr-color;
 }

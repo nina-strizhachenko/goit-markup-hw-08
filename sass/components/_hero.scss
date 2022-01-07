@@ -27,19 +27,14 @@
   }
 }
 
-.main-section__title {
-  font-size: 44px;
-  max-width: 696px;
-  margin: 0 auto 30px;
-}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .main-section {
-    max-width: 480px;
+    max-width: 320px;
     padding: 118px 0;
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .main-section__title {
     font-weight: 900;
     font-size: 26px;

@@ -2,7 +2,7 @@
   @extend %d-flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .subscribe {
     display: block;
     padding-left: 15px;
@@ -18,25 +18,24 @@
 }
 
 .subscribe__input {
-  margin-right: 12px;
+  // margin-right: 12px;
   border-radius: 4px;
   padding-left: 16px;
   color: $secondary-text-color;
   background-color: transparent;
   transition: border-color $transition-cubic;
-  width: 358px;
   min-height: 50px;
   border: 1px solid rgba($border-footer-color, 0.3);
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin-bottom: 20px;
     width: 100%;
     height: 50px;
     padding: 15px 16px;
   }
   @media screen and (min-width: 768px) {
-    width: 450px;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
-    width: 358px;
+    width: 100%;
   }
 }

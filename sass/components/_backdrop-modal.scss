@@ -15,8 +15,8 @@
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 98%;
+  max-height: 100vh;
   padding: 40px;
   background-color: $primary-bgr-color;
   border-radius: 5px;
@@ -24,7 +24,13 @@
   transform: scale(1);
   transition: transform $transition-cubic;
 }
-
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+    overflow-y: auto;
+  }
+}
 .modal__title {
   text-align: center;
   @include font(700, 20px, 1.15, 0.03em);

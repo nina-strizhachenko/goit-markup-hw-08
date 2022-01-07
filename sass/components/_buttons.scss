@@ -68,5 +68,5 @@
 .close-btn__icon:hover,
 .close-btn__icon:focus {
   fill: $accent-color;
-  transition: fill transition-cubic;
+  transition: fill $transition-cubic;
 }

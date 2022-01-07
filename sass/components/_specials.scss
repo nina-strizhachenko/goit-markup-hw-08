@@ -1,16 +1,10 @@
-.special {
-  padding-bottom: 47px;
-  @media screen and (min-width: 480px) {
-    padding-bottom: 0;
-  }
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .special {
     padding: 60px 0;
   }
 }
-.special-list {
-  display: flex;
-}
-@media screen and (min-width: 480px) {
+
+@media screen and (min-width: 320px) {
   .special-list {
     display: block;
   }
@@ -25,6 +19,7 @@
 }
 @media screen and (min-width: 1200px) {
   .special-list {
+    display: flex;
     flex-wrap: nowrap;
   }
 }
@@ -33,7 +28,7 @@
   display: flex;
   justify-content: center;
   background-color: $secondary-shade-bgr-color;
-  padding: 25px 100px;
+  padding: 25px 0;
   margin-bottom: 30px;
   border-radius: 4px;
   & + & {
@@ -41,36 +36,22 @@
   }
 }
 
-.special-list__item {
-  margin-right: 30px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .special-list__item {
-    width: 450px;
-    margin-right: 15px;
+@media screen and (min-width: 320px) {
+  .special-list__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .special-list__item:not(:last-child) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .special-list__item:not(:last-child) {
-    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .special-list__item {
     width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .special-list__item {
+    width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
@@ -83,7 +64,7 @@
   text-transform: uppercase;
   color: $primary-shade-text-color;
   margin-bottom: 10px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {

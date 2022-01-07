@@ -1,6 +1,5 @@
-.section {
-  padding: 94px 0;
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
+  .section {
     padding: 60px 0;
   }
 }
@@ -15,10 +14,9 @@
   text-align: center;
   @include font(700, 36px, 1.17, 0.03em);
   color: $primary-shade-text-color;
-  margin-bottom: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .section-title {
     font-weight: 700;
     font-size: 28px;
