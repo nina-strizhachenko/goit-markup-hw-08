@@ -20,10 +20,10 @@
 
 <body>
     <header class="header">
-        <div class="container header__container">
+        <div class="container header__container is-open">
             <a class="logo link" href="WebStudio"><span class="logo__web">Web</span><span>Studio</span></a>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="" width="24" height="16" aria-label="Переключатель мобильного меню">
+                <svg class="menu-toggle__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="icon-burger" href="./images/icons.svg#icon-menu-burger"></use>
                 </svg></button>
             <nav class="header__nav">
@@ -50,14 +50,15 @@
         </div>
 
 
-        <div class="menu-container js-menu-container is-open" id="mobile-menu">
+        <div class="menu-container js-menu-container " id="mobile-menu">
             <button class="menu-toggle js-close-menu">
-                <svg class="" width="40" height="40" aria-label="Переключатель мобильного меню">
+                <svg class="menu-toggle__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-close" href="./images/icons.svg#icon-close"></use>
                 </svg></button>
             <nav class="header__menu">
                 <ul class="menu-list list">
-                    <li class="menu-list__item"><a href="./index.html" class="menu-list__link link ">Студия</a>
+                    <li class="menu-list__item"><a class="menu-list__link menu-list__link--current link"
+                            href="./index.html">Студия</a>
                     </li>
                     <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a>
                     </li>
@@ -76,11 +77,9 @@
                 <ul class="menu-social list">
                     <li class="menu-social__item">
                         <a href="" class="menu-social__link link">Instagram</a>
-                        <span class="menu-social__link--line"></span>
                     </li>
                     <li class="menu-social__item">
                         <a href="" class="menu-social__link link">Twitter</a>
-                        <span class="menu-social__link--line"></span>
                     </li>
                     <li class="menu-social__item">
                         <a href="" class="menu-social__link link">Facebook</a>
@@ -411,7 +410,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__subscribe">
+            <div class="footer__container--wrap footer__subscribe">
                 <h3 class="footer__title">Подпишитесь на рассылку</h3>
                 <form action="#" class="subscribe">
                     <input type="text" name="mailing-email" class="subscribe__input" id="mailing-email"

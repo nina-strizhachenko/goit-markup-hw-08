@@ -20,13 +20,11 @@
 
 <body>
     <header class="header--border">
-        <div class="container  header__container">
+        <div class="container  header__container is-open">
             <a class="logo link" href="WebStudio"> <span class="logo__web">Web</span><span>Studio</span></a>
-            <button type="button" class="menu-toggle js-open-menu js-close-menu" aria-expanded="false"
-                aria-controls="mobile-menu">
-                <svg class="" width="24" height="16" aria-label="Переключатель мобильного меню">
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle__icon" width="24" height="16" aria-label="Переключатель мобильного меню">
                     <use class="icon-burger" href="./images/icons.svg#icon-menu-burger"></use>
-                    <use class="icon-close" href="./images/icons.svg#icon-close"></use>
                 </svg></button>
             <nav class="header__nav">
                 <ul class="nav-list list">
@@ -48,6 +46,46 @@
                         11</a></li>
             </ul>
         </div>
+        <div class="menu-container js-menu-container " id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="menu-toggle__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                </svg></button>
+            <nav class="header__menu">
+                <ul class="menu-list list">
+                    <li class="menu-list__item"><a class="menu-list__link menu-list__link--current link"
+                            href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-list__item"><a href="./portfolio.html" class="menu-list__link link">Портфолио</a>
+                    </li>
+                    <li class="menu-list__item"><a href="" class="menu-list__link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="menu-contacts">
+                <ul class="contacts-list-menu list">
+                    <li class="contacts-list-tel__item"><a class="contacts-list-tel__link link"
+                            href="tel:+380961111111">
+                            +38 096 111 11 11</a></li>
+                    <li class="contacts-list-mail__item"><a class="contacts-list-mail__link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com
+                        </a></li>
+                </ul>
+                <ul class="menu-social list">
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link link">Instagram</a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link link">Twitter</a>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link link">Facebook</a>
+                        <span class="menu-social__link--line"></span>
+                    </li>
+                    <li class="menu-social__item">
+                        <a href="" class="menu-social__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
     </header>
     <main>
         <section class="portfolio section">
@@ -279,20 +317,24 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="footer__subscribe">
-            <h3 class="footer__title">Подпишитесь на рассылку</h3>
-            <form action="#" class="subscribe">
-                <input type="text" name="mailing-email" class="subscribe__input" id="mailing-email"
-                    placeholder="E-mail" />
-                <button class="primary-btn primary-btn--flex primary-btn--icon" type="submit">Подписаться<svg class=""
-                        width="24" height="24">
-                        <use href="./images/icons.svg#icon-send"></use>
-                    </svg>
-                </button>
-            </form>
+            <div class="footer__container--wrap footer__subscribe">
+                <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                <form action="#" class="subscribe">
+                    <input type="text" name="mailing-email" class="subscribe__input" id="mailing-email"
+                        placeholder="E-mail" />
+                    <button class="primary-btn primary-btn--flex primary-btn--icon" type="submit">Подписаться<svg
+                            class="" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
