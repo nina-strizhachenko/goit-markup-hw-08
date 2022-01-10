@@ -5,30 +5,20 @@
 
 .header__nav {
   margin-left: 93px;
-  @media screen and (min-width: 768px) {
-    margin-left: 88px;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
   }
 }
 
 .header--border {
   border: 1px solid $border-header-color;
-  @media screen and (min-width: 320px) {
-    padding: 16px 0;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 0;
-  }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
   .header {
     padding: 16px 0;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .header {
-    padding: 0;
   }
 }
 

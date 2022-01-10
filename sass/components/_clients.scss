@@ -2,13 +2,10 @@
   @extend %d-flex;
 }
 
-@media screen and (min-width: 320px) {
-  .clients {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: -15px;
-  }
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {

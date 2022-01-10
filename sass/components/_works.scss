@@ -10,6 +10,7 @@
 
 .works {
   display: flex;
+  margin: -15px;
 }
 
 .works__item {
@@ -36,6 +37,7 @@
   color: $secondary-text-color;
 }
 
-.works__item:not(:last-child) {
-  margin-right: 30px;
+.works__item {
+  width: calc((100% - 3 * 30px) / 3);
+  margin: 15px;
 }

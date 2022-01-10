@@ -1,38 +1,26 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin: -8px;
+  margin-bottom: 32px;
 }
 
-@media screen and (min-width: 320px) {
-  .filter {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: -8px;
-  }
-}
 @media screen and (min-width: 768px) {
   .filter {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filter {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-  @media screen and (min-width: 320px) {
-    margin-right: 0;
-  }
-}
 @media screen and (min-width: 320px) {
   .filter__item {
-    margin: 8px;
+    margin: 8px 0 8px 8px;
   }
 }
