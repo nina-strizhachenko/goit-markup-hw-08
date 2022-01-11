@@ -15,7 +15,7 @@
 }
 
 .modal {
-  width: 100%;
+  max-width: 450px;
   max-height: 100vh;
   padding: 40px;
   background-color: $primary-bgr-color;
@@ -29,6 +29,12 @@
     overflow-y: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+  }
+}
+
 .modal__title {
   text-align: center;
   @include font(700, 20px, 1.15, 0.03em);

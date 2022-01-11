@@ -24,23 +24,22 @@
   transition: fill $transition-cubic;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-container {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 40px;
-    z-index: 999;
-    text-align: left;
-    background-color: $primary-bgr-color;
-    transform: translateX(100%);
-    transition: transform $transition-cubic;
-  }
+.menu-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  z-index: 999;
+  text-align: left;
+  background-color: $primary-bgr-color;
+  transform: translateX(100%);
+  transition: transform $transition-cubic;
 }
+
 .menu-container.is-open {
   transform: translateX(0);
 }

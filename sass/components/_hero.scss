@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 768px) {
   .main-section {
-    padding: 118px 0;
+    padding: 200px 0;
     margin: 0 auto;
   }
 }
@@ -62,6 +62,7 @@
 
 @media screen and (min-width: 1200px) {
   .main-section__title {
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
