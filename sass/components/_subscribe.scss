@@ -1,14 +1,3 @@
-.subscribe {
-  @extend %d-flex;
-}
-
-@media screen and (min-width: 320px) {
-  .subscribe {
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: flex;
